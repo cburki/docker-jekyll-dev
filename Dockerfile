@@ -53,9 +53,6 @@ RUN echo 'export PAGER=less' >> /root/.bashrc && \
     echo '#[ -z "$TMUX" ] && command -v tmux > /dev/null && tmux && exit 0' >> /root/.bashrc && \
     echo 'PATH="/usr/local/bundle/bin:$PATH"' >> /root/.bashrc
 
-VOLUME /data/src
-WORKDIR /data/src
-
 EXPOSE 22 4000
 
 CMD ["/usr/bin/s6-svscan", "/etc/s6"]
