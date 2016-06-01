@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# setup users, git and development environment
+/opt/setupusers.sh
+/opt/setupgit.sh
+
+# start sshd
+exec /usr/sbin/sshd -D

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# start the jekyll built-in development server
+#exec /usr/local/bundle/bin/jekyll serve -H 0.0.0.0 --watch --source /data/src --destination /data/src/_site
