@@ -3,6 +3,7 @@
 # setup users, git and development environment
 /opt/setupusers.sh
 /opt/setupgit.sh
+/opt/setupenv.sh
 
 # start sshd
 exec /usr/sbin/sshd -D
