@@ -43,7 +43,7 @@ if [ -n "${SSH_USER}" ]; then
     fi
     
     cp /etc/skel/.profile /home/${SSH_USER}/.
-    cp /root/bashrc /home/${SSH_USER}/.bashrc
+    cp /root/.bashrc /home/${SSH_USER}/.bashrc
     cp /root/.tmux.conf /home/${SSH_USER}/.tmux.conf
     echo "export PAGER=less" >> /home/${SSH_USER}/.bashrc
     echo "export TERM=xterm" >> /home/${SSH_USER}/.bashrc
